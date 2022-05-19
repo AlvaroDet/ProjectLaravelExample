@@ -1,3 +1,9 @@
+<?php
+use App\Http\Controllers\ProductController;
+$total = ProductController::cartItem();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +32,7 @@
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
     <ul class ="nav navbar-nav navbar-right">
-        <li><a href="#">Cart(0)</a></li>
+        <li><a href="#">Cart({{$total}})</a></li>
 </ul>
   </div>
 </nav>

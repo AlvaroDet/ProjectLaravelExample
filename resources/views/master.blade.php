@@ -48,5 +48,8 @@
     .trending-wrapper{
         margin: 30px;
     }
+    .img-detail{
+      height: 300px;
+    }
 </Style>
 </html>
